@@ -3,8 +3,7 @@
 
 ## Introduction
 
-In this project, I build a mini honeynet in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, apply some security controls to harden the environment, measure metrics for another 24 hours, then show the results below. The metrics we will show are:
-
+In this project, I created a mini honeynet in Azure and collected log data from various sources into a Log Analytics workspace. Microsoft Sentinel uses this data to generate attack maps, trigger alerts, and create incidents. I tracked security metrics in an insecure environment for 24 hours, then applied security controls to strengthen it and measured the metrics again for another 24 hours. The metrics are shown below.
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
 - SecurityAlert (Log Analytics Alerts Triggered)
@@ -29,10 +28,9 @@ The architecture of the mini honeynet in Azure consists of the following compone
 - Azure Storage Account
 - Microsoft Sentinel
 
-For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
+In the "BEFORE" setup, all resources were exposed to the internet with Virtual Machines having open Network Security Groups and firewalls, and other resources had public endpoints accessible(no need for private endpoints). 
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls(FW) as well as Private Endpoint(PE)
-
+In the "AFTER" setup, Network Security Groups were secured by blocking all traffic except from the admin workstation, and additional protection was added through firewalls(FW) and Private Endpoints(PE) for all resources.
 ## Attack Maps Before Hardening / Security Controls
 <img width="1180" alt="(before)-linux-ssh-auth-fail" src="https://github.com/user-attachments/assets/007b8882-163c-46d4-9161-e911b544dc57" /><br>
 <img width="1192" alt="(before)-nsg-malicious-allowed-in" src="https://github.com/user-attachments/assets/bd286516-3b45-4b5b-8072-839405cae20e" /><br>
