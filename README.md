@@ -40,8 +40,8 @@ In the "AFTER" setup, Network Security Groups were secured by blocking all traff
 
 The following table shows the metrics measured in the insecure environment for 24 hours:
 
-Start Time 2024-12-11 18:51
-Stop Time 2024-12-12 19:04
+Start Time 12/11/2024 18:51
+Stop Time 12/12/2024 19:04
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -53,14 +53,14 @@ Stop Time 2024-12-12 19:04
 
 ## Attack Maps After Hardening / Security Controls
 
-```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+```All map queries returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
 
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics  measured in the environment for another 24 hours, but after having applied security controls:
 
-Start Time 2024-12-13 17:48
-Stop Time	2024-12-14 18:17
+Start Time 12/13/2024 17:48
+Stop Time	12/14/2024 18:17
 
 | Metric                   | Count
 | ------------------------ | -----
