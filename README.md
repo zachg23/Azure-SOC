@@ -39,6 +39,7 @@ In the "AFTER" setup, Network Security Groups were secured by blocking all traff
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics measured in the insecure environment for 24 hours:
+
 Start Time 2024-12-11 18:51
 Stop Time 2024-12-12 19:04
 
@@ -57,6 +58,7 @@ Stop Time 2024-12-12 19:04
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics  measured in the environment for another 24 hours, but after having applied security controls:
+
 Start Time 2024-12-13 17:48
 Stop Time	2024-12-14 18:17
 
